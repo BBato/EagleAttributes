@@ -1,0 +1,1 @@
+pyinstaller -F --hidden-import --noconsole pkg_resources.py2_warn gui.py
