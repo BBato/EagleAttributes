@@ -73,14 +73,14 @@ class Interface(Frame):
         return button
 
     def addProgressBar(self):
-        p = Progressbar(self, orient="horizontal", length=605, mode="determinate")
+        p = Progressbar(self, orient="horizontal", length=750, mode="determinate")
         p.pack()
         p["value"]=0
         p["maximum"]=100
         return p
 
     def addText(self):
-        t = Text(self,height=4, width=67, wrap="none", font=("Courier", 9))
+        t = Text(self,height=12, width=83, wrap="none", font=("Courier", 9))
         t.configure(state="disabled")
         t.pack()
         return t
@@ -123,7 +123,7 @@ def main():
 
     global root
     root = Tk()
-    root.geometry("640x480+640+480")
+    root.geometry("800x600+300+300")
     app = Interface()
     root.mainloop()
 
